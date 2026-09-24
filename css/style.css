@@ -1,0 +1,119 @@
+/* ======================================================
+   SAGARA - Offline Stylesheet
+   Font Poppins Offline & Custom Utilities
+====================================================== */
+
+/* Local Poppins Font Faces */
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url('../assets/fonts/poppins-latin-300.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('../assets/fonts/poppins-latin-400.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url('../assets/fonts/poppins-latin-500.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url('../assets/fonts/poppins-latin-600.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url('../assets/fonts/poppins-latin-700.woff2') format('woff2');
+}
+
+/* Base and Utility Styles */
+body {
+    background-color: #FFF8ED;
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: #0f172a;
+}
+
+.text-shadow {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hover-lift {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-lift:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(22, 125, 146, 0.15);
+}
+
+/* ======================================================
+   GLOBAL TEXT CONTRAST & READABILITY FIX
+====================================================== */
+p.text-gray-600,
+.text-gray-600,
+.faq-subtitle-text,
+.section-subtitle {
+    color: #334155 !important; /* Dark Slate Charcoal - 100% High Contrast & Readable */
+    font-weight: 500 !important;
+}
+
+/* ======================================================
+   FAQ STYLING & HIGH CONTRAST FIX
+====================================================== */
+.faq-item {
+    background-color: #ffffff !important;
+    border: 1px solid #cbd5e1 !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+}
+
+.faq-title-text, 
+.faq-item button, 
+.faq-item button span {
+    color: #0f172a !important; /* Dark Navy Slate - Ultra Sharp Readability */
+    font-weight: 700 !important;
+}
+
+.faq-title-text:hover {
+    color: #167D92 !important;
+}
+
+.faq-answer {
+    color: #334155 !important;
+}
+
+/* Floating Widget Styling */
+.floating-sagara-btn {
+    box-shadow: 0 10px 25px -5px rgba(22, 125, 146, 0.5), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+}
+
+/* Hero Secondary CTA Button - High Contrast Fix */
+.hero-secondary-btn {
+    background-color: #167D92 !important;
+    color: #ffffff !important;
+    border: 2px solid rgba(255, 255, 255, 0.5) !important;
+    box-shadow: 0 10px 25px -5px rgba(22, 125, 146, 0.4) !important;
+}
+
+.hero-secondary-btn:hover {
+    background-color: #0f5c6e !important;
+    color: #ffffff !important;
+}
+
